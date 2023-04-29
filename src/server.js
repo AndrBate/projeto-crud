@@ -1,12 +1,15 @@
 const express = require('express')
 const path = require('path')
+
 const database = require('./database')
 const routes = require('./routes')
+
 const app = express()
 
 
 // conexão com o banco de dados
 database.connect()
+
 
 
 // definindo o template engine
